@@ -1,7 +1,7 @@
 ## Setting up the GitHub repo.
 
 In this first part of the tutorial you will have set up the GitHub repository that you will then use for the rest of the tutorial. It will simply contain these 2 files:
-* main.py -> a Python script that trains a ML model and prints some plots regarding the accuracy and the loss.
+* main.py -> a Python script that trains a ML model, saves a file called "results.txt" containing the best accuracies for the training and validation sets, and the plots of the accuracy and the loss of the model during the training.
 * requirements.txt -> a text file with all the Python packages the code in main.py needs to run
 
 The first thing to do is go to the following [link](https://github.com/vishalned/CI-with-CML) and fork the repository as shown in the picture below.
