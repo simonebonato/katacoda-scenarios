@@ -41,4 +41,4 @@ jobs:
           python main.py
 </pre>
 
-Now we are ready to trigger the action and see what we would normally get.
+Now we are almost ready to trigger the action and see what we get!
