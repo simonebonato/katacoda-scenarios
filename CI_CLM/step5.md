@@ -4,7 +4,7 @@ It is very tedious to check the results on the logs of the runner at each instan
 that will show up on the pull request page. 
 
 
-CML can easily display a `.md` file using the command cml-send-comment. So after running the `main.py` file, write the following commands
+CML can easily display a `.md` file using the command cml-send-comment. So in the yaml file, after running the `python main.py`, write the following commands
 
 
           
