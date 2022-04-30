@@ -21,4 +21,4 @@ echo "## Model metrics" > report.md
                    
 '''
 
-testing
+As seen above, we are just using '''echo''' to append the results from metrics.txt to report.md.
