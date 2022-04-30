@@ -7,6 +7,7 @@ that will show up on the pull request page.
 CML can easily display a `.md` file using the command cml-send-comment. So after running the `main.py` file, write the following commands
 
 '''
+          
           echo "## Model metrics" > report.md
           cat results.txt >> report.md
           
