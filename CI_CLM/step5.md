@@ -6,7 +6,7 @@ that will show up on the pull request page.
 
 CML can easily display a `.md` file using the command cml-send-comment. So after running the `main.py` file, write the following commands
 
-'''
+
           
           echo "## Model metrics" > report.md
           cat results.txt >> report.md
@@ -20,6 +20,11 @@ CML can easily display a `.md` file using the command cml-send-comment. So after
           
           cml-send-comment report.md
                    
-'''
 
-As seen above, we are just using `echo` to append the results from metrics.txt to report.md.
+
+As seen above, we are just using `echo` to append the results from `metrics.txt` to `report.md`. The command `cml-publish` is used to add an image to the report, and 'cml-send-comment' is used to put the report on the pull request. When making a change and committing, you should now see the report on your pull request like this
+
+![image](https://user-images.githubusercontent.com/27778126/166103751-ac91c02c-1e0e-46d0-9fc0-23dd6d3965ce.png)
+
+
+
