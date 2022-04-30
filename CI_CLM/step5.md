@@ -4,10 +4,10 @@ It is very tedious to check the results on the logs of the runner at each instan
 that will show up on the pull request page. 
 
 
-CML can easily display a '.md' file using the command cml-send-comment. So after running the main.py file, write the following commands
+CML can easily display a `.md` file using the command cml-send-comment. So after running the `main.py` file, write the following commands
 
 '''
-echo "## Model metrics" > report.md
+          echo "## Model metrics" > report.md
           cat results.txt >> report.md
           
           echo "## Plots" >> report.md
@@ -21,4 +21,4 @@ echo "## Model metrics" > report.md
                    
 '''
 
-As seen above, we are just using '''echo''' to append the results from metrics.txt to report.md.
+As seen above, we are just using `echo` to append the results from metrics.txt to report.md.
