@@ -3,8 +3,8 @@
 At this point we can add some lines to the code that we have just written on the yaml file:
 
 <pre class="file" data-filename="workflow.yml" data-target="prepend">
-  Echo "Model Metrics"
-  cat metrics.txt
+  echo "Model Metrics"
+  cat results.txt
 </pre>
 
 Echo simply prints out what follows inside the GitHub actions page when it is triggered (we will see shortly), while cat does the same as Echo, only with the content of the txt file.
@@ -44,14 +44,14 @@ Now, instead of committing directly to the master branch, we can create a new br
 
 ![image](https://user-images.githubusercontent.com/63954877/166103482-01b975b7-ce24-4cc6-a2b2-8daeac577efc.png)
 
-Next press on "Create pull request" and we will be redirected to the PR page. 
-The PR is a place where it is possible to see what changes have been made to a branch of a repository, and you can discuss with your colleagues whether or not you want your edits to be merged into the main branch.
+Next we want to open a Pull Request, hence press on "Create pull request" specifying that the branch you want to merge to, is the base repository that you forked initially.
+The PR is a place where it is possible to see what changes have been made to a branch of a repository, and you can discuss with your colleagues whether or not you want your edits to be merged into the main branch. 
 
-You will probably see something like this:
+What happens next is that, as we are opening a new branch, some code will be automatically pushed to the newly created branch and our GitHub action will be activated. As a consequence, on the PR page you will probably see something like this:
 
 ![image](https://user-images.githubusercontent.com/63954877/166104196-c92ddfd9-5ebe-4727-84d7-c138d24feca9.png)
 
-This means that the action that we have created is up and running, and if we click on "details" we can observe what is happening inside:
+This means that the action that we have created is up and running! If we click on "details" we can observe what is going on inside:
 
 ![image](https://user-images.githubusercontent.com/63954877/166104425-195db6d5-f232-4b68-978d-cef9133a447e.png)
 
@@ -61,5 +61,7 @@ If you press on "running cml" and scroll down until the end, this is what you'll
 ![image](https://user-images.githubusercontent.com/63954877/166104334-00a9a211-3c87-4e33-bfd2-2dcefdf66bd7.png)
 
 Which is exactly what we wanted our action to print. As you can see, seeing the results of the action in this way is a bit clunky and not really informative.
+
+The idea is that, whenever somebody pushes code to the branch we have just created, the action will be triggered, and here on the PR page we can observe the results of our workflow. 
 
 In the next section we will see how to use the CML library to get much better insights!
