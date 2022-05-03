@@ -35,8 +35,8 @@ jobs:
           # Your ML workflow goes here
           pip install -r requirement.txt
           python main.py
-          Echo "Model Metrics"
-          cat metrics.txt
+          echo "Model Metrics"
+          cat results.txt
 </pre>
 
 Now, instead of committing directly to the master branch, we can create a new branch that we will call "test", in the following way:
