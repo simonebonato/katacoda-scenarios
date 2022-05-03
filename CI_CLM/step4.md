@@ -16,6 +16,7 @@ name: CI-with-CML
 on: [push]
 jobs:
   run:
+    permissions: write-all
     runs-on: ubuntu-latest
     # optionally use a convenient Ubuntu LTS + DVC + CML image
     container: docker://dvcorg/cml-py3:latest
