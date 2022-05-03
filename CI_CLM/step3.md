@@ -9,6 +9,7 @@ This is how the body of a GitHub action is defined:
 * jobs: steps that will be executed in order once the action is triggered.
 * runs-on: the OS on which the action will run, in this case we chose the ubuntu OS
 * container: incase needed, you can also setup a specific container that has all the requirements installed. In this case, we use the container that already has the cml installed and hence this is the path of the container. We can also specify a custom container is needed (but then CML should be installed on the container manually before).
+* env: in this section of the action you can define information that you might need to access or reference when writing your code. For example in this specific case we are defining the following "repo_token: ${{ secrets.GITHUB_TOKEN }}", that is necessary because whenever a workflow starts running, GitHub creates a unique GITHUB_TOKEN secret you can use to authenticate in a workflow run, and it is not possible to run a workflow without that for security reasons. 
 
 The remaining lines define the steps that are run:
 * actions/checkout@v2 -> this is a standard action that is performed anytime an action is triggered, to setup the working directory for the code.
