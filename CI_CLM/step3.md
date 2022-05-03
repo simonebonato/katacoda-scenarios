@@ -5,7 +5,7 @@ Simply open the yaml file (in our case "cml.yaml") and paste the lines of code t
 
 This is how the body of a GitHub action is defined:
 * name: the name of the action that is triggered.
-* on: type of action that triggers the action. In our case it is triggered anytime a some changes are pushed to the repo.
+* on: type of action that triggers the action. In our case it is triggered anytime some changes are pushed to the repo.
 * jobs: steps that will be executed in order once the action is triggered.
 * runs-on: the OS on which the action will run, in this case we chose the ubuntu OS
 * container: incase needed, you can also setup a specific container that has all the requirements installed. In this case, we use the container that already has the cml installed and hence this is the path of the container. We can also specify a custom container is needed (but then CML should be installed on the container manually before).
