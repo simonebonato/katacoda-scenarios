@@ -1,12 +1,12 @@
 ## Prepare a folder for GitHub action
 
-The CI pipeline that we are implementing makes use of the GitHub actions, which are lies of code that are executed automatically any time they are triggered, for example when some new code is pushed to the repo.
+The CI pipeline that we are implementing makes use of the GitHub actions, which are lines of code that are executed automatically any time they are triggered, for example when some new code is pushed to the repo.
 
-In order to use them, what you have to do is create the following folder structure inside of your repository, containing a file with the *json* extension.
+In order to use them, what you have to do is create the following folder structure inside of your repository, containing a file with the *.yaml* extension.
 
 .github/workflows/[your_file_name].yaml (1) 
 
-The name of the file can be decided arbitrarily, what matters is that the extension is *json*.
+The name of the file can be decided arbitrarily, what matters is that the extension is *.yaml*.
 
 In order to create the file, simply get into the main GitHub repo, press "Add file", then "Create new file" and on top write (1), inserting a name instead of the brackets (we will use "cml").
 Then simply commit the code (green button below) directly to the main branch.
