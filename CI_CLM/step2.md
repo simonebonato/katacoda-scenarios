@@ -1,6 +1,6 @@
 ## Prepare a folder for GitHub action
 
-The CI pipeline that we are implementing makes use of the GitHub actions, which are lines of code that are executed automatically any time they are triggered, for example when some new code is pushed to the repo.
+The CI pipeline that we are implementing makes use of the GitHub actions, lines of code that utilize the so called *workflows*. In a workflow, a server is provided by Github on which code can be executed that is specified in the workflow file. You may either write the code there or create a re-usable action in another repository. You can publish this action for others on the so-called Github market place and also use other persons' actions.
 
 In order to use them, what you have to do is create the following folder structure inside of your repository, containing a file with the *.yaml* extension.
 
