@@ -44,7 +44,7 @@ Now, instead of committing directly to the master branch, we can create a new br
 ![image](https://user-images.githubusercontent.com/63954877/166103482-01b975b7-ce24-4cc6-a2b2-8daeac577efc.png)
 
 Next press on "Create pull request" and we will be redirected to the PR page. 
-The PR is a place where it is possible to see what changes have been made to a branch of a repository, and you can discuss with your colleagues wheter or not you want you edits to be merged into the main branch.
+The PR is a place where it is possible to see what changes have been made to a branch of a repository, and you can discuss with your colleagues whether or not you want your edits to be merged into the main branch.
 
 You will probably see something like this:
 
