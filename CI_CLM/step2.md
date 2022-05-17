@@ -2,20 +2,28 @@
 
 The CI pipeline that we are implementing makes use of the GitHub actions, lines of code that utilize the so called *workflows*. In a workflow, a server is provided by Github on which code can be executed that is specified in the workflow file. You may either write the code there or create a re-usable action in another repository. You can publish this action for others on the so-called Github market place and also use other persons' actions.
 
+The first step to take is to clone the repository we have just forked, and we can do that by going to the page of the directory, copying the link (as shown in the picture), and finally use the following line on the terminal:
+
+`git clone <repo's link>`
+
+Please make sure that you are cloning the forked version of the repo
+
+![image](https://user-images.githubusercontent.com/63954877/168800397-afd2079c-834d-466c-97ed-72183c833792.png)
+
 In order to use them, what you have to do is create the following folder structure inside of your repository, containing a file with the *.yaml* extension.
 
 .github/workflows/[your_file_name].yaml (1) 
 
 The name of the file can be decided arbitrarily, what matters is that the extension is *.yaml*.
 
-In order to create the file, simply get into the main GitHub repo, press "Add file", then "Create new file" and on top write (1), inserting a name instead of the brackets (we will use "cml").
-Then simply commit the code (green button below) directly to the main branch.
-![image](https://user-images.githubusercontent.com/63954877/165971853-fb6ead44-bc24-4116-9f75-445cd8b79ff2.png)
+In order to create the file, we can first check the name of the available directories by using the command `ls`, and after that we can use `cd <name_of_CLM_directory>` to access it.
 
+In our case we have the folder is called CI-with-CML. Once we are inside it, we can create folder structure mentioned above using the following commands `mkdir .github` and once accessing it using `cd .github`, we make `mkdir workflows` and access it in the same way.
 
-This if a picture of how it has to look like in the end:
-![image](https://user-images.githubusercontent.com/63954877/165970477-25920180-e3a7-470b-94f7-c2306dbfefc5.png)
+At this point we want to create the .yaml file using `touch <file_name>.yaml`, in out case we will use "CML.yaml".
 
-And inside the workflows folder:
-![image](https://user-images.githubusercontent.com/63954877/165970525-4e608d82-c4ab-4144-aff4-a7b0a240f516.png)
+We can finally add and commit the changes using `git add .` and after `git commit -m "<your_message_here>`, but only after having set up our github credentials using:
 
+`git config --global user.email <your_email>` and `git config --global user.name <your_name>`.
+
+We can then proceed with the next part of the tutorial!
