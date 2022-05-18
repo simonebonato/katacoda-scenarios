@@ -1,7 +1,7 @@
 ## Creating the GitHub action.
 
 Now we are going to write the code that is necessary to perform the GitHub action anytime it is triggered.
-Simply open the yaml file using the command `nano <filename>.yaml` (in our case "CML.yaml") and paste the lines of code that you can find below. Once you're done with it just press `Ctrl+X` to exix, then `y` to save and `Enter`.
+Simply open the yaml file using the command `nano <filename>.yaml`{{execute}} (in our case "CML.yaml") and paste the lines of code that you can find below. Once you're done with it just press `Ctrl+X` to exix, then `y` to save and `Enter`.
 
 This is how the body of a GitHub action is defined:
 * name: the name of the action that is triggered.
