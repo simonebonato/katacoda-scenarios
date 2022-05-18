@@ -4,7 +4,7 @@ The CI pipeline that we are implementing makes use of the GitHub actions, lines 
 
 The first step to take is to clone the repository we have just forked, and we can do that by going to the page of the directory, copying the link (as shown in the picture), and finally use the following line on the terminal:
 
-`git clone <repo's link>`
+`git clone https://github.com/vishalned/CI-with-CML.git`{{execute}}
 
 Please make sure that you are cloning the forked version of the repo
 
@@ -16,13 +16,13 @@ In order to use them, what you have to do is create the following folder structu
 
 The name of the file can be decided arbitrarily, what matters is that the extension is *.yaml*.
 
-In order to create the file, we can first check the name of the available directories by using the command `ls`, and after that we can use `cd <name_of_CLM_directory>` to access it.
+In order to create the file, we can first check the name of the available directories by using the command `ls`{{execute}}, and after that we can use `cd <name_of_CLM_directory>` to access it.
 
-In our case we have the folder is called CI-with-CML. Once we are inside it, we can create folder structure mentioned above using the following commands `mkdir .github` and once accessing it using `cd .github`, we make `mkdir workflows` and access it in the same way.
+In our case we have the folder is called CI-with-CML. Once we are inside it, we can create folder structure mentioned above using the following commands `mkdir .github`{{execute}} and once accessing it using `cd .github`{{execute}}, we make `mkdir workflows`{{execute}} and access it in the same way.
 
-At this point we want to create the .yaml file using `touch <file_name>.yaml`, in out case we will use "CML.yaml".
+At this point we want to create the .yaml file using `touch CML.yaml`{{execute}}
 
-We can finally add and commit the changes using `git add .` and after `git commit -m "<your_message_here>`, but only after having set up our github credentials using:
+We can finally add and commit the changes using `git add .`{{execute}} and after `git commit -m "sample message"`{{execute}}, but only after having set up our github credentials using:
 
 `git config --global user.email <your_email>` and `git config --global user.name <your_name>`.
 
