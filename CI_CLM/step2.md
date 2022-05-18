@@ -16,9 +16,9 @@ In order to use them, what you have to do is create the following folder structu
 
 The name of the file can be decided arbitrarily, what matters is that the extension is *.yaml*.
 
-In order to create the file, we can first check the name of the available directories by using the command `ls`{{execute}}, and after that we can use `cd <name_of_CLM_directory>` to access it.
+In order to create the file, we can first check the name of the available directories by using the command `ls`{{execute}}, and after that we can use `cd CI-with-CML` to access it.
 
-In our case we have the folder is called CI-with-CML. Once we are inside it, we can create folder structure mentioned above using the following commands `mkdir .github`{{execute}} and once accessing it using `cd .github`{{execute}}, we make `mkdir workflows`{{execute}} and access it in the same way.
+Once we are inside it, we can create folder structure mentioned above using the following commands `mkdir .github`{{execute}} and once accessing it using `cd .github`{{execute}}, we make `mkdir workflows`{{execute}} and access it in the same way.
 
 At this point we want to create the .yaml file using `touch CML.yaml`{{execute}}
 
