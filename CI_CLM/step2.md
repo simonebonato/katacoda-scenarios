@@ -22,8 +22,11 @@ Once we are inside it, we can create folder structure mentioned above using the 
 
 At this point we want to create the .yaml file using `touch CML.yaml`{{execute}}
 
-We can finally add and commit the changes using `git add .`{{execute}} and after `git commit -m "sample message"`{{execute}}, but only after having set up our github credentials using:
-
+First lets set up the configuration with this command. You need to insert your email id and username here. 
 `git config --global user.email <your_email>` and `git config --global user.name <your_name>`.
+
+
+
+
 
 We can then proceed with the next part of the tutorial!
