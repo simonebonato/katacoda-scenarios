@@ -4,7 +4,7 @@ The CI pipeline that we are implementing makes use of the GitHub actions, lines 
 
 The first step to take is to clone the repository we have just forked, and we can do that by going to the page of the directory, copying the link (as shown in the picture), and finally use the following line on the terminal:
 
-`git clone https://github.com/vishalned/CI-with-CML.git`{{execute}}
+`git clone <your repository name>`
 
 Please make sure that you are cloning the forked version of the repo
 
