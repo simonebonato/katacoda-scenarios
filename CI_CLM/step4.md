@@ -40,11 +40,10 @@ jobs:
           cat results.txt
 </pre>
 
-Now, instead of committing directly to the master branch, we can create a new branch that we will call "test", in the following way:
+Now, instead of committing directly to the master branch, we can create a new branch that we will call "test", in the following way `git checkout -b test`{{execute}}. We can finally add and commit the changes using `git add .`{{execute}} and after `git commit -m "sample message"`{{execute}}. Now we can push it to your forked branch using the command `git push --set-upstream origin test`{{execute}}.
 
-![image](https://user-images.githubusercontent.com/63954877/166103482-01b975b7-ce24-4cc6-a2b2-8daeac577efc.png)
 
-Next we want to open a Pull Request, hence press on "Create pull request" specifying that the branch you want to merge to, is the base repository that you forked initially.
+Next we want to open a Pull Request (Go to Pull Requests > New Pull Request), hence press on "New Pull Request" specifying that the branch you want to merge to, is the base repository that you forked initially. You want to compare the test branch you just created with the main branch. 
 The PR is a place where it is possible to see what changes have been made to a branch of a repository, and you can discuss with your colleagues whether or not you want your edits to be merged into the main branch. 
 
 What happens next is that, as we are opening a new branch, some code will be automatically pushed to the newly created branch and our GitHub action will be activated. As a consequence, on the PR page you will probably see something like this:
